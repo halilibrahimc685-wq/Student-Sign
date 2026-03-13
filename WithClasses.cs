@@ -227,7 +227,7 @@ class Program
                 newInfo = Console.ReadLine();
             }
 
-            bool idAffecting = false;
+            bool IdDeğiş = false;
 
             if (changeInfo == "3")
             {
@@ -237,17 +237,17 @@ class Program
                     newInfo = Console.ReadLine();
                 }
                 StudentList[foundIndex].YearOfEnrollment = newInfo;
-                idAffecting = true;
+                IdDeğiş = true;
             }
             else if (changeInfo == "4")
             {
                 StudentList[foundIndex].Faculty = newInfo;
-                idAffecting = true;
+                IdDeğiş = true;
             }
             else if (changeInfo == "5")
             {
                 StudentList[foundIndex].Department = newInfo;
-                idAffecting = true;
+                IdDeğiş = true;
             }
             else if (changeInfo == "1")
             {
@@ -263,7 +263,7 @@ class Program
                 Console.WriteLine("Geçersiz seçim!");
                 return;
             }
-            if (idAffecting)
+            if (IdDeğiş)
             {
                 if (StudentList[foundIndex].Faculty.Length < 1 ||
                     StudentList[foundIndex].Department.Length < 1 ||
