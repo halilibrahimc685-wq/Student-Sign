@@ -233,7 +233,7 @@ class Program
             {
                 while (!TarihGecerliMi(newInfo, out newInfo))
                 {
-                    Console.WriteLine("Lütfen tarihi DD/MM/YYYY formatında giriniz:");
+                    Console.WriteLine("Lütfen tarihi GG/AA/YYYY formatında giriniz:");
                     newInfo = Console.ReadLine();
                 }
                 StudentList[foundIndex].YearOfEnrollment = newInfo;
